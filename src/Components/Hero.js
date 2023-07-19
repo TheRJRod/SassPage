@@ -1,6 +1,6 @@
 import {AiFillStar} from 'react-icons/ai';
 import { useState } from 'react';
-
+import SVGHeading from '../Images/SVG/Untitled-1.svg'
 
 function Hero({setHero}) {
 const [dotOne, setDotOne] = useState(true);
@@ -24,8 +24,8 @@ const handleClickTwo = () => {
 
 const scrollPhone = () => {
   if(window.scrollY > 400) {
-    setPhonePosition('translate-y-[58rem]')
-    setPhoneTwoPosition('translate-y-[58rem]')
+    setPhonePosition('translate-y-[60rem]')
+    setPhoneTwoPosition('translate-y-[60rem]')
   }
   else {
     setPhonePosition('')
@@ -47,13 +47,13 @@ window.addEventListener('scroll', scrollPhone);
       <div className='flex flex-col   justify-center	items-center gap-y-4'>
       <p className='text-white font-display text-center  text-4xl'>Hottest App <br/> in Apple Store</p>
       <span className='flex text-4xl text-yellow-500'>
-        <AiFillStar/>
-        <AiFillStar/>
-        <AiFillStar/>
-        <AiFillStar/>
-        <AiFillStar/>
+        <AiFillStar className='hover:scale-125'/>
+        <AiFillStar className='hover:scale-125'/>
+        <AiFillStar className='hover:scale-125'/>
+        <AiFillStar className='hover:scale-125'/>
+        <AiFillStar className='hover:scale-125'/>
       </span>
-      <img className='h-14' src={require('../Images/download-on-the-app-store-apple-logo-png-transparent.png')} alt='Iphone App Download' />
+      <img className='h-14 cursor-pointer' src={require('../Images/download-on-the-app-store-apple-logo-png-transparent.png')} alt='Iphone App Download' />
       </div>
       
       </div>
@@ -61,15 +61,17 @@ window.addEventListener('scroll', scrollPhone);
     </div>
 
     {/* Second Hero Section */}
-    <div className={`flex justify-center absolute ${dotTwo ? '' : 'translate-x-full'}	transition-all duration-1000 delay-300	 top-0 left-0 right-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-indigo-500 py-10`}>
-    <div className='flex mr-32'>
-      <h1 className='text-right text-white text-4xl self-center pr-10'>The tool that will <br/> <span className='text-7xl text-indigo-500'>BOOST</span> <br/> your business today!</h1>
+    <div className={`flex justify-center absolute ${dotTwo ? '' : 'translate-x-full'}	transition-all duration-1000 delay-300	 top-0 left-0 right-0 bg-gradient-to-b from-indigo-500 `}>
+    <div className='absolute mt-10'>
       <img className={` h-[32rem]  drop-shadow-2xl ${phoneTwoPosition} transition-all duration-1000 delay-300`} src={require('../Images/kisspng-iphone-4-iphone-8-plus-iphone-5-iphone-x-iphone-apple-5ab72c72e81c69.7002471815219539069507.png')} alt='Product' />
-      <div className='text-white font-display text-2xl pl-5 flex flex-col justify-center	gap-32'>
-        <p>Top functionality</p>
-        <p>Best Service</p>
-        <p>Customer Satisfaction</p>
-      </div>
+    </div>
+    <div className='bg-violet-900 w-1/2 flex flex-col justify-center px-40'>
+    <img className='-mb-20 ' src={SVGHeading } alt='heading'/>
+      <p className='font-display text-xl text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <button className='bg-white self-start rounded-full py-2 px-4 text-2xl mt-4 font-display hover:bg-black hover:text-white'>Join The Movement</button>
+    </div>
+    <div className='bg-indigo-500 w-1/2'>
+    <img className='cursor-pointer' src={require('../Images/hero2.jpg')} alt='Iphone App Download' />
     </div>
     </div>
     </div>
