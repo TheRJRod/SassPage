@@ -38,12 +38,12 @@ function Main() {
       <div className={`flex gap-x-3 bg-white z-20 max-w-lg rounded-xl font-display pr-4 items-center  transform transition-all duration-1000 ${scrollTestimonial}`}>
         <img className='z-20 max-h-64 rounded-l-xl' src={require('../Images/pexels-italo-melo-2379004.jpg')} alt='testimonial pic' />
         <div className='z-20 '>
-        <p className='text-purple-900' >John Doe</p>
+        <p className='text-purple-900 font-bold' >John Doe</p>
         <p >"If you're looking for the one tool that will change your business today - this is the app that will do it!"</p>
         </div>
         
       </div>
-    <div className='backdrop-invert bg-purple-900/30 h-[40rem] w-full absolute z-10'></div>
+    <div className=' bg-purple-900 h-[40rem] w-full absolute -z-10'></div>
     </div>
     <div className='flex justify-center items-center pb-60'>
     <div className='flex flex-col w-3/4 h-[36rem] rounded-xl overflow-y-scroll snap-mandatory snap-y'>

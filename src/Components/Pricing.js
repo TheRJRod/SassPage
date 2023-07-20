@@ -46,7 +46,7 @@ function Pricing() {
       <div className="flex flex-col gap-y-6 border-2 border-black/25 py-4 rounded-md mb-20">
         <h4 className="font-bold font-display text-4xl pl-4">Pro</h4>
         <p className="font-display text-xl pl-4">Individual Package</p>
-        <p className="font-display text-xl pl-4"><span className="font-display text-5xl text-indigo-900 font-bold">${pricing ? '20' : '10'}</span>/month</p>
+        <p className="font-display text-xl pl-4"><span className="font-display text-5xl text-violet-900 font-bold">${pricing ? '20' : '10'}</span>/month</p>
         <ul className="font-display text-xl pl-4">
           <li>5000 Queries/month</li>
           <li>Two Users Per Account</li>
