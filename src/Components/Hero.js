@@ -40,7 +40,7 @@ window.addEventListener('scroll', scrollPhone);
     <div className='bg-gradient-to-b from-violet-800 py-10 z-0 relative'>
       <div >
         {/* First Hero Section */}
-    <div className={`flex justify-around ${dotOne ? '' : '-translate-x-full'} transition-all duration-1000 delay-300	`}>
+    <div className={`flex justify-around ${dotOne ? '' : '-translate-x-full'} transition-all duration-1000 delay-300 relative	`}>
       <img className={`h-52 self-start	${dotOne ? '-rotate-45' : ''}  transition-all duration-700`} src={require('../Images/pngwing.com.png')} alt='floating phone' />
       <div className='flex pr-30 gap-6'>
       <img className={`h-[32rem]  drop-shadow-2xl transform transition-all duration-1000  ${phonePosition}`} src={require('../Images/kisspng-iphone-4-iphone-8-plus-iphone-5-iphone-x-iphone-apple-5ab72c72e81c69.7002471815219539069507.png')} alt='Product' />
@@ -58,6 +58,9 @@ window.addEventListener('scroll', scrollPhone);
       
       </div>
       <img className={`h-72 	self-end  ${dotOne ? '-rotate-45' : ''} transition-all duration-700`} src={require('../Images/pngwing.com (1).png')} alt='floating phones' />
+      <div className='absolute top-0 left-1/2 w-72 h-72 -z-20 bg-violet-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
+      <div className='absolute top-0 right-1/2 w-72 h-72 -z-20 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000'></div>
+      <div className='absolute top-20 left-[50rem] w-72 h-72 -z-20 translate-x-40	 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl animation-delay-4000 animate-blob'></div>
     </div>
 
     {/* Second Hero Section */}
@@ -67,7 +70,7 @@ window.addEventListener('scroll', scrollPhone);
     </div>
     <div className='bg-violet-900 w-1/2 flex flex-col justify-center px-40'>
     <img className='-mb-20 ' src={SVGHeading } alt='heading'/>
-      <p className='font-display text-xl text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p className='font-display text-xl text-white'>Revolutionizing the way we interact with our devices, offering a user experience that transcends all expectations. </p>
       <button className='bg-white self-start rounded-full py-2 px-4 text-2xl mt-4 font-display hover:bg-black hover:text-white'>Join The Movement</button>
     </div>
     <div className='bg-indigo-500 w-1/2'>
