@@ -24,7 +24,7 @@ function Pricing() {
         <h3 className="font-display text-5xl font-bold">Pricing Plans</h3>
         <p className="font-display text-xl">From small business owners, to large corporations. We got you covered.</p>
         <div className="flex gap-x-10 relative">
-          <button onClick={handleMonthlyClick} className={`font-display text-xl text-white ${pricing ? 'text-white' : 'text-black'} hover:scale-105`}>Monthly</button>
+          <button onClick={handleMonthlyClick} className={`font-display text-xl ${pricing ? 'text-white' : 'text-black'} hover:scale-105`}>Monthly</button>
           <button onClick={handleAnnualClick} className={`font-display text-xl ${pricing ? 'text-black' : 'text-white'} hover:scale-105`}>Annual</button>
           <div className={`h-10 w-28 -top-1.5 transition-all duration-500 ${pricing ? '-left-4' : 'left-[6.3rem]'} bg-black absolute rounded-md -z-10`}></div>
         </div>
